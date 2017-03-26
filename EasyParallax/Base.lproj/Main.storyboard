@@ -1,26 +1,104 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E192b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="i2x-EL-JyV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--EasyParallax-->
+        <scene sceneID="acI-28-bgu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qMk-fM-UZR" customClass="ViewController" customModule="EasyParallax" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="5gE-I8-LQH"/>
+                        <viewControllerLayoutGuide type="bottom" id="wb8-36-JoI"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="wia-6T-QT9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fbv-v2-cRH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YE1-pE-a2D">
+                                        <rect key="frame" x="0.0" y="333" width="375" height="956"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EM5-ZY-Jqj">
+                                                <rect key="frame" x="8" y="8" width="359" height="940"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <mutableString key="text">Pikachu is a short, chubby rodent Pokémon. It is covered in yellow fur with two horizontal brown stripes on its back. It has a small mouth, long, pointed ears with black tips, brown eyes, and two red circles on its cheeks. There are pouches inside its cheeks where it stores electricity. It has short forearms with five fingers on each paw, and its feet each have three toes. At the base of its lightning bolt-shaped tail is patch of brown fur at the base. A female will have a V-shaped notch at the end of its tail, which looks like the top of a heart. It is classified as a quadruped, but it has been known to stand and walk on its hind legs.
+
+The anime has shown that Pikachu sometimes travel in groups. It raises its tail to check its surroundings, and is occasionally struck by lightning in this position. Living in forested areas, Pikachu is found foraging for berries it roasts with electricity to make them tender enough to eat. It has been observed eating and sometimes destroying telephone poles, wires, and other electronic equipment.
+
+Pikachu is able to release electric discharges of varying intensity. Pikachu has been known to build up energy in its glands, and will need to discharge to avoid complications. It is also able to release energy through its tail, which acts as a grounding rod, as well as recharging fellow Pikachu with electric shocks. Pikachu can also electrify itself to use its signature move Volt Tackle. When threatened, it looses electric charges from its sacs, and a group can build and cause lightning storms. It is found mostly in forests, where a sure sign that Pikachu inhabits a location is patches of burnt grass.
+
+From: Bulbapedia</mutableString>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                    </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="E5U-7t-izU">
+                                        <rect key="frame" x="0.0" y="64" width="375" height="269"/>
+                                        <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="O0f-N5-pdN"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="YE1-pE-a2D" secondAttribute="bottom" id="4UJ-vI-aZu"/>
+                                    <constraint firstItem="YE1-pE-a2D" firstAttribute="leading" secondItem="Fbv-v2-cRH" secondAttribute="leading" id="CiQ-FU-u4Z"/>
+                                    <constraint firstItem="YE1-pE-a2D" firstAttribute="top" secondItem="E5U-7t-izU" secondAttribute="bottom" priority="999" id="E0h-yR-3Sb"/>
+                                    <constraint firstItem="E5U-7t-izU" firstAttribute="centerX" secondItem="Fbv-v2-cRH" secondAttribute="centerX" id="KCe-ev-k1P"/>
+                                    <constraint firstItem="YE1-pE-a2D" firstAttribute="top" secondItem="Fbv-v2-cRH" secondAttribute="top" constant="333" id="MLB-3q-hd2"/>
+                                    <constraint firstAttribute="trailing" secondItem="YE1-pE-a2D" secondAttribute="trailing" id="Pb3-iC-ELc"/>
+                                    <constraint firstItem="E5U-7t-izU" firstAttribute="leading" secondItem="Fbv-v2-cRH" secondAttribute="leading" id="UwZ-gA-84Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="E5U-7t-izU" secondAttribute="trailing" id="a4n-TL-i1e"/>
+                                    <constraint firstItem="YE1-pE-a2D" firstAttribute="centerX" secondItem="Fbv-v2-cRH" secondAttribute="centerX" id="dbD-99-tDz"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fbv-v2-cRH" firstAttribute="top" secondItem="wia-6T-QT9" secondAttribute="top" id="5dQ-U1-XkZ"/>
+                            <constraint firstItem="Fbv-v2-cRH" firstAttribute="leading" secondItem="wia-6T-QT9" secondAttribute="leading" id="7ao-5Q-q5A"/>
+                            <constraint firstAttribute="trailing" secondItem="Fbv-v2-cRH" secondAttribute="trailing" id="b7q-ej-zlC"/>
+                            <constraint firstAttribute="bottom" secondItem="Fbv-v2-cRH" secondAttribute="bottom" id="cGH-NA-Mdb"/>
+                            <constraint firstItem="E5U-7t-izU" firstAttribute="top" secondItem="5gE-I8-LQH" secondAttribute="bottom" id="pMV-po-Cd4"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="EasyParallax" id="Uv8-fb-P2l"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dv-XS-wad" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2796" y="-421"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VgR-3f-XGp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i2x-EL-JyV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Qe-YS-uug">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qMk-fM-UZR" kind="relationship" relationship="rootViewController" id="9nO-00-w46"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQO-yC-XTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2040.8" y="-421.43928035982015"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Pikachu" width="375" height="333"/>
+    </resources>
 </document>
