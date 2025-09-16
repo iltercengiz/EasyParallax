@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     override func loadView() {
         super.loadView()
+        view.backgroundColor = .white
         setupView()
     }
 
@@ -69,14 +70,14 @@ From: Bulbapedia
         imageBottomConstraint.priority = UILayoutPriority(999)
 
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            imageView.heightAnchor.constraint(greaterThanOrEqualToConstant: 150),
+            imageView.topAnchor.constraint(equalTo: view.topAnchor),
+            imageView.heightAnchor.constraint(greaterThanOrEqualToConstant: 200),
             imageBottomConstraint,
             imageView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
             imageView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
 
-            stackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 300),
+            stackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 360),
             stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 16),
             stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -16),
             stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -16),
@@ -87,5 +88,5 @@ From: Bulbapedia
 
 @available(iOS 17.0, *)
 #Preview {
-    return ViewController()
+    ViewController()
 }
