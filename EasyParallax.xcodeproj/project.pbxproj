@@ -14,6 +14,7 @@
 		362A0B542E798CD4002DC40D /* Exceptions for "EasyParallax" folder in "EasyParallax" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				"/Localized: Main.storyboard",
 				Info.plist,
 			);
 			target = 3606D51F1E88392D00A4A1A0 /* EasyParallax */;

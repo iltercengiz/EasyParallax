@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E192b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="i2x-EL-JyV">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="i2x-EL-JyV">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--EasyParallax-->
         <scene sceneID="acI-28-bgu">
             <objects>
-                <viewController id="qMk-fM-UZR" customClass="ViewController" customModule="EasyParallax" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qMk-fM-UZR" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5gE-I8-LQH"/>
                         <viewControllerLayoutGuide type="bottom" id="wb8-36-JoI"/>
@@ -25,18 +23,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YE1-pE-a2D">
-                                        <rect key="frame" x="0.0" y="333" width="375" height="956"/>
+                                        <rect key="frame" x="0.0" y="333" width="375" height="934"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EM5-ZY-Jqj">
-                                                <rect key="frame" x="8" y="8" width="359" height="940"/>
+                                                <rect key="frame" x="8" y="8" width="359" height="918"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <mutableString key="text">Pikachu is a short, chubby rodent Pokémon. It is covered in yellow fur with two horizontal brown stripes on its back. It has a small mouth, long, pointed ears with black tips, brown eyes, and two red circles on its cheeks. There are pouches inside its cheeks where it stores electricity. It has short forearms with five fingers on each paw, and its feet each have three toes. At the base of its lightning bolt-shaped tail is patch of brown fur at the base. A female will have a V-shaped notch at the end of its tail, which looks like the top of a heart. It is classified as a quadruped, but it has been known to stand and walk on its hind legs.
+                                                <string key="text">Pikachu is a short, chubby rodent Pokémon. It is covered in yellow fur with two horizontal brown stripes on its back. It has a small mouth, long, pointed ears with black tips, brown eyes, and two red circles on its cheeks. There are pouches inside its cheeks where it stores electricity. It has short forearms with five fingers on each paw, and its feet each have three toes. At the base of its lightning bolt-shaped tail is patch of brown fur at the base. A female will have a V-shaped notch at the end of its tail, which looks like the top of a heart. It is classified as a quadruped, but it has been known to stand and walk on its hind legs.
 
 The anime has shown that Pikachu sometimes travel in groups. It raises its tail to check its surroundings, and is occasionally struck by lightning in this position. Living in forested areas, Pikachu is found foraging for berries it roasts with electricity to make them tender enough to eat. It has been observed eating and sometimes destroying telephone poles, wires, and other electronic equipment.
 
 Pikachu is able to release electric discharges of varying intensity. Pikachu has been known to build up energy in its glands, and will need to discharge to avoid complications. It is also able to release energy through its tail, which acts as a grounding rod, as well as recharging fellow Pikachu with electric shocks. Pikachu can also electrify itself to use its signature move Volt Tackle. When threatened, it looses electric charges from its sacs, and a group can build and cause lightning storms. It is found mostly in forests, where a sure sign that Pikachu inhabits a location is patches of burnt grass.
 
-From: Bulbapedia</mutableString>
+From: Bulbapedia</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -44,7 +42,7 @@ From: Bulbapedia</mutableString>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="E5U-7t-izU">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="269"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="333"/>
                                         <color key="backgroundColor" red="0.18039215689999999" green="0.80000000000000004" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="O0f-N5-pdN"/>
@@ -85,7 +83,7 @@ From: Bulbapedia</mutableString>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i2x-EL-JyV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Qe-YS-uug">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -99,6 +97,6 @@ From: Bulbapedia</mutableString>
         </scene>
     </scenes>
     <resources>
-        <image name="Pikachu" width="375" height="333"/>
+        <image name="Pikachu" width="750" height="667"/>
     </resources>
 </document>
