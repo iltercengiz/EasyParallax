@@ -39,9 +39,12 @@ class ViewController: UIViewController {
     }
 
     func setupContent(in scrollView: UIScrollView) {
+        let imageContainerView = UIView()
+        imageContainerView.backgroundColor = UIColor(red: 0.18, green: 0.8, blue: 0.44, alpha: 1.0)
+        imageContainerView.translatesAutoresizingMaskIntoConstraints = false
+
         let imageView = UIImageView(image: UIImage(named: "Pikachu"))
         imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = UIColor(red: 0.18, green: 0.8, blue: 0.44, alpha: 1.0)
         imageView.translatesAutoresizingMaskIntoConstraints = false
 
         let stackView = UIStackView()
@@ -63,19 +66,25 @@ From: Bulbapedia
         label.font = UIFont.systemFont(ofSize: 17)
 
         stackView.addArrangedSubview(label)
+        imageContainerView.addSubview(imageView)
         scrollView.addSubview(stackView)
-        scrollView.addSubview(imageView)
+        scrollView.addSubview(imageContainerView)
 
-        let imageBottomConstraint = imageView.bottomAnchor.constraint(equalTo: stackView.topAnchor, constant: -10)
-        imageBottomConstraint.priority = UILayoutPriority(999)
+        let imageContainerBottomConstraint = imageContainerView.bottomAnchor.constraint(equalTo: stackView.topAnchor, constant: -10)
+        imageContainerBottomConstraint.priority = UILayoutPriority(999)
 
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: view.topAnchor),
-            imageView.heightAnchor.constraint(greaterThanOrEqualToConstant: 200),
-            imageBottomConstraint,
-            imageView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-            imageView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-            imageView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
+            imageContainerView.topAnchor.constraint(equalTo: view.topAnchor),
+            imageContainerView.heightAnchor.constraint(greaterThanOrEqualToConstant: 200),
+            imageContainerBottomConstraint,
+            imageContainerView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
+            imageContainerView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
+            imageContainerView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
+
+            imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            imageView.leadingAnchor.constraint(equalTo: imageContainerView.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: imageContainerView.trailingAnchor),
+            imageView.bottomAnchor.constraint(equalTo: imageContainerView.bottomAnchor),
 
             stackView.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 360),
             stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 16),
